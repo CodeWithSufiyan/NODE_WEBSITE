@@ -12,7 +12,3 @@ app.use('/catalog', require('./routes/catalog'));
 app.listen(process.env.PORT || 3517, () => {
     console.log("Listening to port 3517");
 });
-
-app.get('/', (req, res) => {
-    res.render('index.ejs')
-})
