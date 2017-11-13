@@ -12,7 +12,7 @@ var port = process.env.PORT || 8080; // used to create, sign, and verify tokens
 app.set('superSecret', config.secret); // secret variable
 
 //connect to MongoDB
-mongoose.connect('mongodb://root:password@ds155695.mlab.com:55695/pradnyavardhini_app', {useMongoClient:true});
+mongoose.connect('mongodb://root:password@ds259085.mlab.com:59085/codewithsufiyan_app', {useMongoClient:true});
 var db = mongoose.connection;
 // setup view engine
 app.set('view engine', 'ejs');
@@ -47,7 +47,7 @@ app.use(function (err, req, res, next) {
 
 // start app
 app.listen(process.env.PORT || 3517, () => {
-    console.log("listening to port 9000");
+    console.log("listening to port 3517");
 });
 
 
