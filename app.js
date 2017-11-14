@@ -29,7 +29,7 @@ app.use(session({
 app.use(express.static('./public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use('/catalog', require('./routes/catalog'));
+app.use(require('./routes/catalog'));
 app.use('/api', require('./routes/api'));
 app.use(require('./routes/login'));
 // catch 404 and forward to error handler
